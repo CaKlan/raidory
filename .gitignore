@@ -1,0 +1,4 @@
+/target
+/out
+/assets/test_bevy_bg.wasm
+/assets/test_bevy.js

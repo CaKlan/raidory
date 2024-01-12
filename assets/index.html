@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="Consolas.ttf">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;">
+
+    <script type="module">
+        import init from './test_bevy.js'
+
+        init().catch((error) => {
+            if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+                throw error;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
